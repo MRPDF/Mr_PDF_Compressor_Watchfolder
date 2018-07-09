@@ -111,15 +111,7 @@ namespace NET_app
                 //comp.ColorFilterLevel = 3;
                 comp.CompressionQuality = compressionQuality;
 
-                if(colorImageCompression.ToLower() == "flate")
-                {
-                    comp.ColorImageCompression = ImageCompression.Flate;
-                }
-                else if(colorImageCompression.ToLower() == "jbig")
-                {
-                    comp.ColorImageCompression = ImageCompression.JBig;
-                }
-                else if(colorImageCompression.ToLower() == "jp2")
+                 if(colorImageCompression.ToLower() == "jp2")
                 {
                     comp.ColorImageCompression = ImageCompression.JP2;
                 }
